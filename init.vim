@@ -1,11 +1,21 @@
+" ------------------------------------------------
+" Include a file from the nvim config directory
+" ------------------------------------------------
+" https://stackoverflow.com/a/48828172
+function! SourceLocal(relativePath)
+	let homeDir = expand($HOME)
+	let fullPath = homeDir . '/.config/nvim/'. a:relativePath
+	execute 'source ' . fullPath
+endfunction
+
 " Initialize plugin system
-source plugins.vim
+call SourceLocal('plugins.vim')
 
 " Keymappinns
-source keymappings.vim
+call SourceLocal('keymappings.vim')
 
 " Options
-source options.vim
+call SourceLocal('options.vim')
 
 " Settings
-source settings.vim
+call SourceLocal('settings.vim')

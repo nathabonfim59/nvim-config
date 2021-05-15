@@ -2,6 +2,7 @@
 " Remap the leader to space
 nnoremap <Space> <Nop>
 map <Space> <Leader>
+nmap <Leader>c :bw<CR> "Close current buffer
 
 " Remove hightliht
 nmap <Leader>h :noh<CR>

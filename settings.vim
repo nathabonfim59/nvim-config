@@ -4,22 +4,26 @@
 
 "===== Lightline =====
 let g:lightline = {
-            \ 'active': {
-                \   'left': [ [ 'mode', 'paste' ],
-                \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
-                \   'right': [ 
-                    \			   [ 'clock' ],
-                    \              [ 'percent' ],
-                    \              [ 'fileformat', 'fileencoding', 'filetype' ],
-                    \			   [ 'lineinfo' ]]
+    \ 'active': {
+        \   'left': [
+        \             [ 'mode', 'paste' ],
+        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ]
+           \],
+        \   'right': [ 
+            \			   [ 'clock' ],
+            \              [ 'percent' ],
+            \              [ 'fileformat', 'fileencoding', 'filetype' ],
+            \			   [ 'lineinfo' ],
+            \              [ 'cocstatus' ]]
+            \ },
+            \ 'component_function': {
+                \   'gitbranch': 'FugitiveHead',
+                \   'cocstatus': 'coc#status'
+                \ },
+                \ 'component': {
+                    \	'clock': '%{strftime("%H:%M")}'
                     \ },
-                    \ 'component_function': {
-                        \   'gitbranch': 'FugitiveHead'
-                        \ },
-                        \ 'component': {
-                            \	'clock': '%{strftime("%H:%M")}'
-                            \ },
-                            \}
+                    \}
 
 "===== CODI ===== (coding playground)
 let g:codi#interpreters = {
@@ -73,6 +77,9 @@ function! s:show_documentation()
     execute '!' . &keywordprg . " " . expand('<cword>')
   endif
 endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 "===== Barbar =====
 let bufferline = get(g:, 'bufferline', {})

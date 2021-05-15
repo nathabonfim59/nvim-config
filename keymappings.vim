@@ -33,6 +33,9 @@ inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " Better go to definition
 nmap <silent> gd <Plug>(coc-definition)
 
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
 "= Coc-explorer
 " Open coc-explorer with the same shortcut <Ctrl + Alt + b>
 nmap <C-M-b> :CocCommand explorer<CR>

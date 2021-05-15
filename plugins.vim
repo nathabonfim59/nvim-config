@@ -56,4 +56,7 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
+" Adds sessions support
+Plug 'glepnir/dashboard-nvim'
+
 call plug#end()

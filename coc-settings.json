@@ -1,0 +1,10 @@
+{
+    "signature.target": "float",
+    "signature.enable": true,
+    "signature.hideOnTextChange": false,
+    "suggest.floatEnable":true,
+    "suggest.enablePreselect": true,
+    "hover.autoHide": false,
+    "suggest.echodocSupport": true,
+    "suggest.maxCompleteItemCount": 20
+}

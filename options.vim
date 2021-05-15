@@ -22,3 +22,4 @@ set laststatus=2
 set updatetime=250
 
 set cursorline
+set timeoutlen=40

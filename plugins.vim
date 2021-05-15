@@ -48,4 +48,7 @@ Plug 'romgrk/barbar.nvim'
 " File Tree for vim
 Plug 'kyazdani42/nvim-tree.lua'
 
+" Wichkey plugin
+Plug 'folke/which-key.nvim'
+
 call plug#end()

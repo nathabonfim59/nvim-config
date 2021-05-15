@@ -51,4 +51,9 @@ Plug 'kyazdani42/nvim-tree.lua'
 " Wichkey plugin
 Plug 'folke/which-key.nvim'
 
+" Telescope addition
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 call plug#end()

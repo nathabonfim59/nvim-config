@@ -3,6 +3,9 @@
 nnoremap <Space> <Nop>
 map <Space> <Leader>
 
+" Remove hightliht
+nmap <Leader>h :noh<CR>
+
 "===== Git gutter =====
 " Jump between git chunks
 nmap <Leader>gn <Plug>GitGutterNextHunk  " git next
@@ -36,3 +39,7 @@ nmap <C-M-b> :CocCommand explorer<CR>
 "===== Vim treesiter =====
 " Toggle filetree
 nmap <Leader>e :NvimTreeToggle<CR>
+
+"===== Telescope =====
+nmap <Leader>t :Telescope<CR>
+nmap <Leader>f :Telescope find_files<CR>

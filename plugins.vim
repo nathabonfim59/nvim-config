@@ -1,0 +1,51 @@
+call plug#begin('~/.config/nvim/plugged')
+
+" Install One Dark Theme
+Plug 'joshdick/onedark.vim', {'as': 'onedark'}
+
+" Install lightline (a 'powerline' for vim)
+Plug 'itchyny/lightline.vim'
+
+" Install 'emmet' for VIM
+Plug 'mattn/emmet-vim'
+
+" Interactive notepad
+Plug 'metakirby5/codi.vim'
+
+" Orgmode for VIM
+Plug 'jceb/vim-orgmode'
+
+" Date Handler - Orgmode Requirement
+Plug 'tpope/vim-speeddating' 
+
+" Plugins to edit markdown files
+Plug 'godlygeek/tabular', { 'for': 'markdown' }
+Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
+"
+" Add images from clipboard in vim
+Plug 'ferrine/md-img-paste.vim', { 'for': 'markdown' } 
+
+" Autoclose brackets
+Plug 'tpope/vim-surround'
+
+" Visual marks in Vim
+Plug 'kshenoy/vim-signature'
+
+" Add git changes support
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" Monitor coding time
+Plug 'wakatime/vim-wakatime'
+
+" Adds autocompletion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Adds tabs to vim
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
+
+" File Tree for vim
+Plug 'kyazdani42/nvim-tree.lua'
+
+call plug#end()

@@ -42,7 +42,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 
 7. Open your nvim
-8. Intall the plugins
+8. Install the plugins
 
 ```vim
 :PlugInstall

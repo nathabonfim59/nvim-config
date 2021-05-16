@@ -4,24 +4,41 @@
 
 ## Features
 1. Which key: remind your vim shortcuts as you type.
+
 ![whichkey](img/whichkey.png)
+
 2. Lightline: change the color of your statusbar depeding on the mode you're in.
+
 ![lightline](img/lightline.png)
+
 3. COC: the intellisense you aways wanted.
+
 ![intellisense](img/intellisense.png)
+
 > **Pro tip**: use <CTRL+K> to show the documentation of a function on hover.
 4. Sessions: save your buffers to use later
+
 ![sessions](img/sessions.png)
+
 5. Telescope: one of the best fuzzy finders out there.
+
 ![telescope](img/telescope.png)
+
 > **Pro tip**: Use <Leader>f to search for files.
 6. Git: see the new chunks of code as you type;
+
 ![git](img/git.png)
+
 7. Tabs!
+
 ![tabs](img/tabs.png)
+
 8. NvimTree: a file tree at the tip of your fingers.
+
 ![nvimtree](img/nvimtree.png)
-    > **Pro tip**: Use <Leader>e to toggle the filetree.
+
+> **Pro tip**: Use <Leader>e to toggle the filetree.
+
 7. And much more!
 
 ## How to install

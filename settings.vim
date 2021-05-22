@@ -4,26 +4,36 @@
 
 "===== Lightline =====
 let g:lightline = {
-    \ 'active': {
-        \   'left': [
-        \             [ 'mode', 'paste' ],
-        \             [ 'gitbranch', 'readonly', 'filename', 'modified' ]
-           \],
-        \   'right': [ 
-            \			   [ 'clock' ],
-            \              [ 'percent' ],
-            \              [ 'fileformat', 'fileencoding', 'filetype' ],
-            \			   [ 'lineinfo' ],
-            \              [ 'cocstatus' ]]
-            \ },
-            \ 'component_function': {
-                \   'gitbranch': 'FugitiveHead',
-                \   'cocstatus': 'coc#status'
-                \ },
-                \ 'component': {
-                    \	'clock': '%{strftime("%H:%M")}'
-                    \ },
-                    \}
+    \'active': {
+        \'left': [
+            \[ 'mode', 'paste' ],
+            \[ 'gitbranch', 'readonly', 'filename', 'modified' ]
+        \],
+        \'right': [ 
+            \[ 'clock' ],
+            \[ 'percent' ],
+            \[ 'fileformat', 'fileencoding', 'filetype' ],
+            \[ 'lineinfo' ],
+            \[ 'cocstatus' ]]
+    \},
+    \'component_function': {
+        \'gitbranch': 'FugitiveHead',
+        \'cocstatus': 'coc#status'
+    \},
+    \'component': {
+        \'clock': '%{strftime("%H:%M")}'
+    \},
+    \'tabline': {
+        \'left': [ ['buffers'] ],
+        \'right': [ ['close'] ]
+    \ },
+    \'component_expand': {
+        \'buffers': 'lightline#bufferline#buffers'
+    \},
+    \'component_type': {
+        \'buffers': 'tabsel'
+    \}
+\}
 
 "===== CODI ===== (coding playground)
 let g:codi#interpreters = {
@@ -81,18 +91,15 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-"===== Barbar =====
-let bufferline = get(g:, 'bufferline', {})
+"===== Bufferline =====
+let g:lightline.component_raw = {'buffers': 1}
+let g:lightline#bufferline#show_number = 2
+let g:lightline#bufferline#enable_devicons = 1
+let g:lightline#bufferline#icon_position = 'left'
+let g:lightline#bufferline#clickable = 1
+let g:lightline#bufferline#margin_right = 2
+let g:lightline#bufferline#margin_left = 2
 
-"" Enable/disable icons
-let bufferline.icons = 'both'
-" Custom colors in icons
-let bufferline.icon_custom_colors = v:true
-" Configure icons on the bufferline.
-let bufferline.icon_separator_active = '▎'
-let bufferline.icon_separator_inactive = '▎'
-let bufferline.icon_close_tab = ''
-let bufferline.icon_close_tab_modified = '●'
 
 "
 let g:dashboard_custom_header =<< trim END

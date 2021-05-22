@@ -43,7 +43,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Adds tabs to vim
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
+Plug 'mengelbrecht/lightline-bufferline'
 
 " File Tree for vim
 Plug 'kyazdani42/nvim-tree.lua'

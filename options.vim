@@ -6,6 +6,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+set relativenumber
 set autoindent
 syntax on
 set wildmenu " Enable fuzzy seach

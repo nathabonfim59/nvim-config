@@ -43,6 +43,8 @@ nmap <Leader>e :NvimTreeToggle<CR>
 "===== Telescope =====
 nmap <Leader>t :Telescope<CR>
 nmap <Leader>f :Telescope find_files<CR>
+" Requires 'ripgrep' package
+nmap <Leader>l :Telescope live_grep<CR> 
 
 
 "===== Bufferline =====

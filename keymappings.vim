@@ -43,9 +43,11 @@ nmap <Leader>e :NvimTreeToggle<CR>
 "===== Telescope =====
 nmap <Leader>t :Telescope<CR>
 nmap <Leader>f :Telescope find_files<CR>
-" Requires 'ripgrep' package
+" Live grep search Requires 'ripgrep' package
 nmap <Leader>l :Telescope live_grep<CR> 
 
+" Fuzzy find the open buffers
+nmap <Leader>b :Telescope buffers<CR>
 
 "===== Bufferline =====
 nmap <Leader>1 <Plug>lightline#bufferline#go(1)

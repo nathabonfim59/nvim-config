@@ -24,3 +24,7 @@ set updatetime=250
 
 set cursorline
 set timeoutlen=40
+
+" Set a column delimiter at 80 chars
+set textwidth=80
+set colorcolumn=+1

@@ -5,7 +5,7 @@ map <Space> <Leader>
 nmap <Leader>c :bw<CR> "Close current buffer
 
 " Remove hightliht
-nmap <Leader>h :noh<CR>
+nmap <Leader>n :noh<CR>
 
 " Show the tabs and spaces in the file
 nmap <Leader>s :set invlist<CR>

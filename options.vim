@@ -28,3 +28,6 @@ set timeoutlen=40
 " Set a column delimiter at 80 chars
 set textwidth=80
 set colorcolumn=+1
+
+" Shot the end of the line char and tabs
+set listchars=eol:↓,tab:\ \ ┊,trail:●,extends:…,precedes:…,space:·

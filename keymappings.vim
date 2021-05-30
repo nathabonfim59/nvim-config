@@ -7,6 +7,9 @@ nmap <Leader>c :bw<CR> "Close current buffer
 " Remove hightliht
 nmap <Leader>h :noh<CR>
 
+" Show the tabs and spaces in the file
+nmap <Leader>s :set invlist<CR>
+
 "===== Git gutter =====
 " Jump between git chunks
 nmap <Leader>gn <Plug>GitGutterNextHunk  " git next

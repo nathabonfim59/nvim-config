@@ -10,6 +10,10 @@ nmap <Leader>n :noh<CR>
 " Show the tabs and spaces in the file
 nmap <Leader>s :set invlist<CR>
 
+" Split Window
+nmap <silent><Leader>wv :vsplit<CR>
+nmap <silent><Leader>wh :split<CR>
+
 "===== Git gutter =====
 " Jump between git chunks
 nmap <Leader>gn <Plug>GitGutterNextHunk  " git next
@@ -43,6 +47,9 @@ nmap <leader>rn <Plug>(coc-rename)
 " Toggle filetree
 nmap <Leader>e :NvimTreeToggle<CR>
 
+" Toggle filetree
+nmap <Leader>re :NvimTreeFindFile<CR>
+
 "===== Telescope =====
 nmap <Leader>t :Telescope<CR>
 nmap <Leader>f :Telescope find_files<CR>
@@ -53,13 +60,7 @@ nmap <Leader>l :Telescope live_grep<CR>
 nmap <Leader>b :Telescope buffers<CR>
 
 "===== Bufferline =====
-nmap <Leader>1 <Plug>lightline#bufferline#go(1)
-nmap <Leader>2 <Plug>lightline#bufferline#go(2)
-nmap <Leader>3 <Plug>lightline#bufferline#go(3)
-nmap <Leader>4 <Plug>lightline#bufferline#go(4)
-nmap <Leader>5 <Plug>lightline#bufferline#go(5)
-nmap <Leader>6 <Plug>lightline#bufferline#go(6)
-nmap <Leader>7 <Plug>lightline#bufferline#go(7)
-nmap <Leader>8 <Plug>lightline#bufferline#go(8)
-nmap <Leader>9 <Plug>lightline#bufferline#go(9)
-nmap <Leader>0 <Plug>lightline#bufferline#go(10)
+" Move through buffers using the arrow keys
+nnoremap <Leader>j :BufferNext<CR>
+nnoremap <Leader>k :BufferPrevious<CR>
+nnoremap <Leader>p :BufferPick<CR>

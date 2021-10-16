@@ -159,3 +159,10 @@ END
 lua << EOF
   require("which-key").setup {}
 EOF
+
+
+" Initializes the NerdTreePlugin
+lua << EOF
+  require("nvim-tree").setup {}
+EOF
+

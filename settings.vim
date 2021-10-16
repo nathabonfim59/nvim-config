@@ -154,3 +154,8 @@ let g:dashboard_custom_header =<< trim END
  |   [ [ ]  ]   |        ╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
  \___[_[_]__]___|                                                                          
 END
+
+" Initializes the WhichKey plugin
+lua << EOF
+  require("which-key").setup {}
+EOF

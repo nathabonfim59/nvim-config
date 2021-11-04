@@ -64,3 +64,6 @@ nmap <Leader>b :Telescope buffers<CR>
 nnoremap <Leader>j :BufferNext<CR>
 nnoremap <Leader>k :BufferPrevious<CR>
 nnoremap <Leader>p :BufferPick<CR>
+
+"===== Comment toggler =====
+vmap <Leader>/ :Commentary<CR>

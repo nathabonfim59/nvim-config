@@ -59,4 +59,10 @@ Plug 'nvim-telescope/telescope.nvim'
 " Adds sessions support
 Plug 'glepnir/dashboard-nvim'
 
+" Comment toggler by tpope
+Plug 'tpope/vim-commentary'
+
+" Syntax highlight for log files
+Plug 'MTDL9/vim-log-highlighting'
+
 call plug#end()

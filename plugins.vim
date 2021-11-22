@@ -1,7 +1,10 @@
 call plug#begin('~/.config/nvim/plugged')
 
-" Install One Dark Theme
+" Vim themes
 Plug 'joshdick/onedark.vim', {'as': 'onedark'}
+Plug 'EdenEast/nightfox.nvim',  {'as': 'nightfox'}
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+
 
 " Install lightline (a 'powerline' for vim)
 Plug 'itchyny/lightline.vim'

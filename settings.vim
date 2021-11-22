@@ -166,3 +166,44 @@ lua << EOF
   require("nvim-tree").setup {}
 EOF
 
+
+" Telescope configuration
+lua << EOF
+require('telescope').setup {
+    vimgrep_arguments = {
+        "rg",
+        "--color=never",
+        "--no-heading",
+        "--with-filename",
+        "--line-number",
+        "--column",
+        "--smart-case",
+        "--hidden",
+        },
+    file_ignore_patterns = {},
+    path_display = { shorten = 5 },
+    winblend = 0,
+    border = {},
+    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+    color_devicons = true,
+    set_env = { ["COLORTERM"] = "truecolor" }, 
+    extensions = {
+        fzf = {
+            fuzzy = true, -- false will only do exact matching
+            override_generic_sorter = true, -- override the generic sorter
+            override_file_sorter = true, -- override the file sorter
+            case_mode = "smart_case", -- or "ignore_case" or "respect_case"
+            },
+        pickers = {
+            find_files = {
+                find_command = { "fd", "--type=file", "--hidden", "--smart-case" },
+                },
+            live_grep = {
+                --@usage don't include the filename in the search results
+                only_sort_text = true,
+                },
+            },   }
+        }
+
+require('telescope').load_extension('fzf')
+EOF

@@ -12,6 +12,9 @@ Plug 'itchyny/lightline.vim'
 " Install 'emmet' for VIM
 Plug 'mattn/emmet-vim'
 
+" Treesitter (better syntax highlighting)
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 " Interactive notepad
 Plug 'metakirby5/codi.vim'
 

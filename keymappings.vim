@@ -4,6 +4,10 @@ nnoremap <Space> <Nop>
 map <Space> <Leader>
 nmap <Leader>c :bw<CR> "Close current buffer
 
+" Buffer operations
+nmap <Leader>Ba :bufdo bd <CR> "Close all buffers
+nmap <Leader>Bo :w <bar> %bd <bar> e# <bar> bd# <CR> "Close all buffers, execept the current one
+
 " Remove hightliht
 nmap <Leader>n :noh<CR>
 

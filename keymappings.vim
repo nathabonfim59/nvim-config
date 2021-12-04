@@ -42,8 +42,8 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " Coc list symbols
-nnoremap <Leader>O :CocList outline<CR>
-nnoremap <Leader>P :CocList<CR>
+nnoremap <Leader>O :CocList outline<CR> " Current buffer
+nnoremap <Leader>P :CocList symbols<CR> " Workspace
 
 " Better go to definition
 nmap <silent> gd <Plug>(coc-definition)

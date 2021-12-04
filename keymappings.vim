@@ -63,6 +63,9 @@ nmap <Leader>l :Telescope live_grep<CR>
 " Fuzzy find the open buffers
 nmap <Leader>b :Telescope buffers<CR>
 
+" Fuzzy find buffer
+nmap <Leader>R :Telescope registers<CR>
+
 "===== Bufferline =====
 " Move through buffers using the arrow keys
 nnoremap <Leader>j :BufferNext<CR>
